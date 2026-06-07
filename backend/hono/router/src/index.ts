@@ -29,7 +29,7 @@ app.post("/products", async (c) => {
   return c.json({ message: "Product created" }, 201);
 });
 
-// request parameter
+// request parameter"
 app.get("/products/:id", (c) => {
   const id = Number(c.req.param("id"));
   const product = products.find((p) => p.id === id);
